@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d545764.css",
-    "main.js": "/static/js/main.2c08706f.js",
-    "static/js/952.3d997745.chunk.js": "/static/js/952.3d997745.chunk.js",
-    "static/js/453.6ed87669.chunk.js": "/static/js/453.6ed87669.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.2d545764.css.map": "/static/css/main.2d545764.css.map",
-    "main.2c08706f.js.map": "/static/js/main.2c08706f.js.map",
-    "952.3d997745.chunk.js.map": "/static/js/952.3d997745.chunk.js.map",
-    "453.6ed87669.chunk.js.map": "/static/js/453.6ed87669.chunk.js.map"
+    "main.css": "/apptea/static/css/main.2d545764.css",
+    "main.js": "/apptea/static/js/main.e6a472d9.js",
+    "static/js/952.3d997745.chunk.js": "/apptea/static/js/952.3d997745.chunk.js",
+    "static/js/453.6ed87669.chunk.js": "/apptea/static/js/453.6ed87669.chunk.js",
+    "static/media/logo.svg": "/apptea/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/apptea/index.html",
+    "main.2d545764.css.map": "/apptea/static/css/main.2d545764.css.map",
+    "main.e6a472d9.js.map": "/apptea/static/js/main.e6a472d9.js.map",
+    "952.3d997745.chunk.js.map": "/apptea/static/js/952.3d997745.chunk.js.map",
+    "453.6ed87669.chunk.js.map": "/apptea/static/js/453.6ed87669.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d545764.css",
-    "static/js/main.2c08706f.js"
+    "static/js/main.e6a472d9.js"
   ]
 }
