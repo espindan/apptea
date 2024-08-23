@@ -2,7 +2,7 @@
   "name": "bright-minds",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://espindan.github.io/apptea/",
+  "homepage": "http://espindan.github.io/apptea/",
   "dependencies": {
     "@supabase/supabase-js": "^2.45.1",
     "@testing-library/jest-dom": "^5.17.0",
