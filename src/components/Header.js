@@ -6,7 +6,7 @@ const Header = () => {
       <div className="nav-wrapper pink lighten-3">
         <div className='left'>
             <a href="logo" className="brand-logo">
-                <i class="material-icons">lightbulb_outline</i> 
+                <i className="material-icons">lightbulb_outline</i> 
                 Bright Minds
             </a>
         </div>

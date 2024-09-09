@@ -9,7 +9,7 @@ const Blog = () => {
     const fetchPosts = async () => {
       const { data, error } = await supabase
         .from("Post") // Ensure the table name is correct
-        .select('title, content'); // Use correct select syntax
+        .select('title, content, image'); // Use correct select syntax
 
       if (error) {
         console.error('Error fetching posts:', error);
