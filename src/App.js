@@ -2,6 +2,8 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import supabase from './components/supabaseClient';
 import Login from './components/Login';
+import SignUp from './components/SignUp';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,9 +20,15 @@ function App() {
   };
 
   return (
-    <div className="App">
-       <Login onLogin={handleLogin} />
-    </div>
+    // <div className="App">
+    //    <Login onLogin={handleLogin} />
+    // </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/SignUp" element={<SignUp />} />
+      </Routes>
+    </Router>
   );
 }
 

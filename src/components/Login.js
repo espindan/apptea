@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import supabase from './supabaseClient';
+import { Link } from "react-router-dom";
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -100,9 +101,10 @@ const Login = ({ onLogin }) => {
             </form>
           </div>
         </div>
-        <a href="#!">Create account</a>
+        
+        <Link to="/SignUp">Create account</Link>
+     
       </center>
-
       <div className="section"></div>
       <div className="section"></div>
     </main>
