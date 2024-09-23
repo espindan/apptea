@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import supabase from './supabaseClient';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,6 +24,7 @@ const Login = ({ onLogin }) => {
       setError(error.message);
     } else {
       console.log('Logged in:', data);
+      setTimeout(() => navigate('/Blog'), 3000);
     }
     setLoading(false);
   };

@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import supabase from './supabaseClient';
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = ({ onSignUp }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState(null);
+  const [successMessage, setSuccessMessage] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,8 +26,14 @@ const SignUp = ({ onSignUp }) => {
     if (error) {
       setError('Failed to sign up. Please try again.');
     } else {
-      onSignUp();
+      handleSignUp();
     }
+  };
+
+  const handleSignUp = () => {
+    setSuccessMessage('Please check your email to verify your account.');
+    // Optionally redirect to the login page
+    setTimeout(() => navigate('/Blog'), 3000);
   };
 
   return (
@@ -49,8 +58,11 @@ const SignUp = ({ onSignUp }) => {
               display: "inline-block",
               padding: "32px 48px 0px 48px",
               border: "1px solid #EEE",
+              width: "400px",
             }}
           >
+            {error && <p style={{ color: 'red' }}>{error}</p>}
+            {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
             <form className="col s12" onSubmit={handleSubmit}>
               {/* Email input */}
               <div className="row">
@@ -118,7 +130,7 @@ const SignUp = ({ onSignUp }) => {
         </div>
 
         <p>
-          Already have an account? <Link to="/">Login here</Link>
+          Already have an account? <Link to="/apptea">Login here</Link>
         </p>
       </center>
     </main>

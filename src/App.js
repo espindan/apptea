@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import supabase from './components/supabaseClient';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
+import Blog from './components/Blog';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  
 function App() {
@@ -27,6 +28,8 @@ function App() {
       <Routes>
         <Route path="/apptea" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Blog" element={<Blog />} />
+
       </Routes>
     </Router>
   );
