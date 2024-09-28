@@ -24,7 +24,7 @@ const Login = ({ onLogin }) => {
       setError(error.message);
     } else {
       console.log('Logged in:', data);
-      setTimeout(() => navigate('/Blog'), 3000);
+      navigate('/Blog')
     }
     setLoading(false);
   };

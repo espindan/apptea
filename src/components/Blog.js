@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Post from './Post';
 import supabase from './supabaseClient';
+import Header from './Header';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -22,6 +23,11 @@ const Blog = () => {
   }, []);
 
   return (
+
+    <div className="App">
+      
+    <Header />
+
     <div className="container">
       <h1>All discussions</h1>
       {posts.map(post => (
@@ -30,6 +36,7 @@ const Blog = () => {
             image={post.image}
             content={post.content} />
       ))}
+    </div>
     </div>
   );
 };

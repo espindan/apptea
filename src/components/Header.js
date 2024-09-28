@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,8 +14,8 @@ const Header = () => {
         </div>
 
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a href="#about">About us</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">Buscar</a></li>
+          <li><Link to="/AutismChildForm"> Crear Perfil</Link> </li>
           <li><a href="#discussions">Discussions</a></li>
         </ul>
       </div>
