@@ -26,9 +26,9 @@ function App() {
     // <div className="App">
     //    <Login onLogin={handleLogin} />
     // </div>
-    <Router>
+    <Router basename="/apptea">
       <Routes>
-        <Route path="/apptea" element={<Login />} />
+        <Route path="" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/AutismChildForm" element={<AutismChildForm />} />
