@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/apptea/static/css/main.2d545764.css",
-    "main.js": "/apptea/static/js/main.376b7649.js",
+    "main.js": "/apptea/static/js/main.91f04596.js",
     "static/js/952.3d997745.chunk.js": "/apptea/static/js/952.3d997745.chunk.js",
     "static/js/453.6ed87669.chunk.js": "/apptea/static/js/453.6ed87669.chunk.js",
     "index.html": "/apptea/index.html",
     "main.2d545764.css.map": "/apptea/static/css/main.2d545764.css.map",
-    "main.376b7649.js.map": "/apptea/static/js/main.376b7649.js.map",
+    "main.91f04596.js.map": "/apptea/static/js/main.91f04596.js.map",
     "952.3d997745.chunk.js.map": "/apptea/static/js/952.3d997745.chunk.js.map",
     "453.6ed87669.chunk.js.map": "/apptea/static/js/453.6ed87669.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d545764.css",
-    "static/js/main.376b7649.js"
+    "static/js/main.91f04596.js"
   ]
 }
