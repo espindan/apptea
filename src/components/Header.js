@@ -9,14 +9,14 @@ const Header = () => {
         <div className='left'>
             <a href="logo" className="brand-logo">
                 <i className="material-icons">lightbulb_outline</i> 
-                Bright Minds
+                Apptea
             </a>
         </div>
 
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><a href="#about">Buscar</a></li>
+          <li><a href="/Search">Buscar</a></li>
           <li><Link to="/AutismChildForm"> Crear Perfil</Link> </li>
-          <li><a href="#discussions">Discussions</a></li>
+          <li><a href="/Blog">Discussions</a></li>
         </ul>
       </div>
     </nav>

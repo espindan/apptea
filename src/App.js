@@ -5,6 +5,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Blog from './components/Blog';
 import AutismChildForm from './components/AutismChildForm'
+import Search from './components/Search';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Blog" element={<Blog />} />
         <Route path="/AutismChildForm" element={<AutismChildForm />} />
+        <Route path="/Search" element={<Search />} />
       </Routes>
     </Router>
   );

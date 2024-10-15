@@ -29,7 +29,7 @@ const Blog = () => {
     <Header />
 
     <div className="container">
-      <h1>All discussions</h1>
+      <h3>Aportes sobre experiencias</h3>
       {posts.map(post => (
         <Post key={post.content} 
             title={post.title} 

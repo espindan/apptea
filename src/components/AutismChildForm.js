@@ -106,7 +106,7 @@ function AutismChildForm() {
             <Header />
 
             <div className="container">
-                <h4 className="center-align">Formulario de Información</h4>
+                <h3 className="center-align">Formulario de Información</h3>
                 <form onSubmit={handleSubmit} className="col s10">
 
                     <div className="row">
