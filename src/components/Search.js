@@ -60,18 +60,41 @@ const SearchByIdScreen = () => {
             {loading && <div className="progress"><div className="indeterminate"></div></div>}
             {error && <p className="red-text">{error}</p>} {/* Display error if any */}
             {data && (
-                <div className="card">
-                    <div className="card-content">
-                        <span className="card-title">Result:</span>
-                        <p><strong>Name:</strong> {data.name}</p>
-                        <p><strong>Age:</strong> {data.age}</p>
-                        <p><strong>Autism Level:</strong> {data.autism_level}</p>
-                        {/* Display other fields as necessary */}
-                    </div>
-                    <div className="card-action">
-                        <a href="#" className="btn-flat" onClick={() => setData(null)}>Clear</a>
-                    </div>
+              <div className="card" style={{ borderRadius: '15px', padding: '20px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }}>
+              <div className="row" style={{ display: 'flex', alignItems: 'center' }}>
+                <div className="col s4">
+                  <img
+                    src="https://zkhendzouvpqpuzphbpv.supabase.co/storage/v1/object/sign/AppTea/ninno.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJBcHBUZWEvbmlubm8uanBlZyIsImlhdCI6MTcyOTM2MDE0MywiZXhwIjoxNzYwODk2MTQzfQ.tdQCUuvDl688BltgOFfNSwHARfp3AaSlNNxBM8ITtNg&t=2024-10-19T17%3A49%3A03.886Z"
+                    alt="profile"
+                    className="responsive-img circle"
+                    style={{ width: '100%', height: '100', borderRadius: '15px' }}
+                  />
                 </div>
+                <div className="col s8">
+                  <div className="card-content">
+                    <h5>Nombre: {data.name}</h5>
+                    <p><strong>Edad:</strong> {data.age}</p>
+                    <p><strong>Grado de autismo:</strong> {data.autism_level}</p>
+                    <p><strong>Alergias:</strong> {data.allergies}</p>
+                    <p><strong>Medicación:</strong> {data.medications}</p>
+                    <p><strong>Objeto de apoyo:</strong> {data.support_object}</p>
+                    <p><strong>Dificultades de comunicación:</strong> {data.communication_problems}</p>
+                    <p><strong>Preferencias de comunicación:</strong> {data.communication_preferences}</p>
+                    <p><strong>Rutinas:</strong> {data.routines}</p>
+                    <p><strong>Intereses profundos:</strong> {data.support_object}</p>
+                    <p><strong>Comportamientos repetitivos:</strong> {data.repetitive_behaviors}</p>
+                    <p><strong>Sensibilidad sensorial:</strong> {data.sensory_sensitivity}</p>
+                    <p><strong>Expresión de emociones:</strong> {data.emotional_expressions}</p>
+                    <p><strong>Manejo de emociones:</strong> {data.emotional_behaviors}</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="card-action" style={{ textAlign: 'center' }}>
+                <a href="#" className="btn-flat" onClick={() => setData(null)}>Clear</a>
+              </div>
+            </div>
+          
             )}
         </div>
         </div>

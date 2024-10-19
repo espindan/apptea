@@ -17,7 +17,7 @@ const Header = () => {
           <li><Link to="/Search"> Buscar </Link> </li>
           <li><Link to="/AutismChildForm"> Crear Perfil</Link> </li>
           <li><Link to="/Blog"> Consultas </Link> </li>
-
+          <li><Link to="/"> Salir </Link> </li>
         </ul>
       </div>
     </nav>
