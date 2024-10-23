@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css'; // Materialize CSS
 import M from 'materialize-css'; // Import Materialize JS
+import logo from './images/logo.png'; // Import image
+
 
 const Header = () => {
   useEffect(() => {
@@ -14,7 +16,7 @@ const Header = () => {
     <nav className="white" role="navigation">
       <div className="nav-wrapper container">
         <div className='left'>
-          <a id="logo-container" href="#" className="brand-logo">Logo</a>
+          <img src={logo} id="logo-container" className="brand-logo" alt="Unsplashed background img 1"/>
         </div>
 
         {/* Desktop Menu */}
