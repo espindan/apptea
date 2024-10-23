@@ -58,7 +58,7 @@ const Blog = () => {
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
             <h5 class="center">¿Qué es el autismo y cuáles son sus síntomas principales?</h5>
 
             <p class="light">El autismo es un trastorno del neurodesarrollo que afecta la comunicación, las habilidades sociales y los comportamientos de las personas. Los síntomas pueden variar, pero suelen incluir dificultades en la interacción social, problemas para comunicarse verbalmente y no verbalmente, y comportamientos repetitivos o intereses restringidos.</p>
@@ -67,7 +67,7 @@ const Blog = () => {
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
             <h5 class="center">¿El autismo tiene cura o tratamiento?</h5>
 
             <p class="light">El autismo no tiene cura, ya que es una condición de por vida. Sin embargo, existen tratamientos y terapias, como la intervención temprana, la terapia ocupacional y la terapia del habla, que pueden mejorar significativamente la calidad de vida y ayudar a las personas a desarrollar habilidades para adaptarse a diferentes situaciones.</p>
@@ -76,7 +76,7 @@ const Blog = () => {
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center brown-text"><i class="material-icons"></i></h2>
             <h5 class="center">¿El autismo afecta a todas las personas de la misma manera?</h5>
 
             <p class="light">El autismo se presenta en un espectro, lo que significa que las personas pueden experimentar diferentes grados de síntomas. Algunas personas pueden necesitar más apoyo en su vida diaria, mientras que otras pueden ser muy independientes y tener habilidades cognitivas avanzadas, pero aún enfrentar desafíos en la socialización o la comprensión de las normas sociales.</p>
@@ -91,7 +91,7 @@ const Blog = () => {
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light"></h5>
         </div>
       </div>
     </div>
@@ -117,15 +117,15 @@ const Blog = () => {
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Apptea</h5>
-          <p class="grey-text text-lighten-4">Es una aplicación web y se analiza celular enfocada en los niños con trastorno del Espectro Autista (TEA), que tendrá como función principal apoyar a la red de cuido o encargados de los niños para tener un mejor conocimiento en la vida ordinaria de los niños con el trastorno, comportamiento experiencias, blog de compartir la vida ordinaria de ellos, de forma que puedan ser comprendidos a nivel social.</p>
+          <p align="left">Es una aplicación web y se analiza celular enfocada en los niños con trastorno del Espectro Autista (TEA), que tendrá como función principal apoyar a la red de cuido o encargados de los niños para tener un mejor conocimiento en la vida ordinaria de los niños con el trastorno, comportamiento experiencias, blog de compartir la vida ordinaria de ellos, de forma que puedan ser comprendidos a nivel social.</p>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Integrantes</h5>
-          <ul>
-            <li>Sofia Campos Sequeira</li>
-            <li>Maria Celeste Chavarria Espinoza</li>
-            <li>Isaac Alexander Herrera Hidalgo</li>
-            <li>Mei Lin Wang Rivera</li>
+          <ul align="left">
+            <li>-Sofia Campos Sequeira</li>
+            <li>-Maria Celeste Chavarria Espinoza</li>
+            <li>-Isaac Alexander Herrera Hidalgo</li>
+            <li>-Mei Lin Wang Rivera</li>
           </ul>
         </div>
         <div class="col l3 s12">
