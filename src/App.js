@@ -23,9 +23,6 @@ function App() {
   };
 
   return (
-    // <div className="App">
-    //    <Login onLogin={handleLogin} />
-    // </div>
     <Router basename="/apptea">
       <Routes>
         <Route path="" element={<Login />} />

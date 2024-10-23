@@ -25,7 +25,7 @@ const SearchByIdScreen = () => {
 
             setData(result);            // Set fetched data
         } catch (err) {
-            setError(err.message);      // Set error message
+            setError("No se encontraron resultados con ese número de cédula");      // Set error message
         } finally {
             setLoading(false);           // Set loading to false
         }
@@ -35,7 +35,7 @@ const SearchByIdScreen = () => {
         <div className="App">
         <Header/>
         <div className="container">
-            <h3 className="center-align">Perfil del niño</h3>
+            <h3 className="center-align">Perfil del paciente</h3>
             <form onSubmit={handleSearch} className="col s12">
             <div class="row center-align">
 
@@ -58,7 +58,7 @@ const SearchByIdScreen = () => {
             </form>
 
             {loading && <div className="progress"><div className="indeterminate"></div></div>}
-            {error && <p className="red-text">{error}</p>} {/* Display error if any */}
+            {error && <h5 className="red-text">{error} !</h5>} 
             {data && (
               <div className="card" style={{ borderRadius: '15px', padding: '20px', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)' }}>
               <div className="row" style={{ display: 'flex', alignItems: 'center' }}>
