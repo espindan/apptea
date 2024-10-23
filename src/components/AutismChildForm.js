@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import supabase from './supabaseClient';
-import M from 'materialize-css'; 
+import M from 'materialize-css';
 
 function AutismChildForm() {
     const [formData, setFormData] = useState({
@@ -101,288 +101,283 @@ function AutismChildForm() {
     }, []);
 
     return (
-        <div className="App">
+        <div className="container">
+            <h3 className="center-align">Formulario</h3>
+            <form onSubmit={handleSubmit} className="col s10">
 
-            <Header />
-
-            <div className="container">
-                <h3 className="center-align">Formulario de Información</h3>
-                <form onSubmit={handleSubmit} className="col s10">
-
-                    <div className="row">
-                        {/* Nombre de niño */}
-                        <div className="input-field col s10">
-                            <label htmlFor="nombreNino">Nombre de niño:</label>
-                            <input
-                                type="text"
-                                name="nombreNino"
-                                id="nombreNino"
-                                value={formData.nombreNino}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                        {/* Edad */}
-                        <div className="input-field col s2">
-                            <label htmlFor="edad">Edad:</label>
-                            <input
-                                type="number"
-                                name="edad"
-                                id="edad"
-                                value={formData.edad}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-                    </div>
-
-
-
-                    <div className="row">
-                        {/* Cédula */}
-                        <div className="input-field col s6">
-                            <label htmlFor="cedula">Cédula:</label>
-                            <input
-                                type="text"
-                                name="cedula"
-                                id="cedula"
-                                value={formData.cedula}
-                                onChange={handleChange}
-                            />
-                        </div>
-
-                        {/* Grado de autismo */}
-                        <div className="input-field col s6">
-                            <label htmlFor="gradoAutismo">Grado de autismo:</label>
-                            <input
-                                type="text"
-                                name="gradoAutismo"
-                                id="gradoAutismo"
-                                value={formData.gradoAutismo}
-                                onChange={handleChange}
-                                required
-                            />
-                        </div>
-
-                    </div>
-
-                    {/* Tiene alergias */}
-                    <div className="input-field col s12">
-                        <select
-                            className="browser-default"
-                            name="tieneAlergias"
-                            value={formData.tieneAlergias}
+                <div className="row">
+                    {/* Nombre de niño */}
+                    <div className="input-field col s10">
+                        <label htmlFor="nombreNino">Nombre de niño:</label>
+                        <input
+                            type="text"
+                            name="nombreNino"
+                            id="nombreNino"
+                            value={formData.nombreNino}
                             onChange={handleChange}
                             required
-                        >
-                            <option value="">Tiene alergias?</option>
-                            <option value="Sí">Sí</option>
-                            <option value="No">No</option>
-                        </select>
+                        />
                     </div>
-
-                    {/* Cual/es (Alergias) */}
-                    {formData.tieneAlergias === 'Sí' && (
-                        <div className="input-field col s12">
-                            <label htmlFor="alergias">Cual/es (Alergias):</label>
-                            <input
-                                type="text"
-                                name="alergias"
-                                id="alergias"
-                                value={formData.alergias}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    )}
-
-                    {/* Toma medicamentos */}
-                    <div className="input-field col s12">
-                        <select
-                            className="browser-default"
-                            name="tomaMedicamentos"
-                            value={formData.tomaMedicamentos}
+                    {/* Edad */}
+                    <div className="input-field col s2">
+                        <label htmlFor="edad">Edad:</label>
+                        <input
+                            type="number"
+                            name="edad"
+                            id="edad"
+                            value={formData.edad}
                             onChange={handleChange}
                             required
-                        >
-                            <option value="">Toma medicamentos?</option>
-                            <option value="Sí">Sí</option>
-                            <option value="No">No</option>
-                        </select>
+                        />
+                    </div>
+                </div>
+
+
+
+                <div className="row">
+                    {/* Cédula */}
+                    <div className="input-field col s6">
+                        <label htmlFor="cedula">Cédula:</label>
+                        <input
+                            type="text"
+                            name="cedula"
+                            id="cedula"
+                            value={formData.cedula}
+                            onChange={handleChange}
+                        />
                     </div>
 
-                    {/* Cual/es (Medicamentos) */}
-                    {formData.tomaMedicamentos === 'Sí' && (
-                        <div className="input-field col s12">
-                            <label htmlFor="medicamentos">Cual/es (Medicamentos):</label>
-                            <input
-                                type="text"
-                                name="medicamentos"
-                                id="medicamentos"
-                                value={formData.medicamentos}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    )}
-
-                    {/* Tiene un objeto de apoyo */}
-                    <div className="input-field col s12">
-                        <select
-                            className="browser-default"
-                            name="tieneObjetoApoyo"
-                            value={formData.tieneObjetoApoyo}
+                    {/* Grado de autismo */}
+                    <div className="input-field col s6">
+                        <label htmlFor="gradoAutismo">Grado de autismo:</label>
+                        <input
+                            type="text"
+                            name="gradoAutismo"
+                            id="gradoAutismo"
+                            value={formData.gradoAutismo}
                             onChange={handleChange}
                             required
-                        >
-                            <option value="">Tiene un objeto de apoyo?</option>
-                            <option value="Sí">Sí</option>
-                            <option value="No">No</option>
-                        </select>
+                        />
                     </div>
 
-                    {/* Cual/es (Objeto de apoyo) */}
-                    {formData.tieneObjetoApoyo === 'Sí' && (
-                        <div className="input-field col s12">
-                            <label htmlFor="objetoApoyo">Cual/es (Objeto de apoyo):</label>
-                            <input
-                                type="text"
-                                name="objetoApoyo"
-                                id="objetoApoyo"
-                                value={formData.objetoApoyo}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    )}
+                </div>
 
-                    {/* Tiene dificultades de comunicación */}
+                {/* Tiene alergias */}
+                <div className="input-field col s12">
+                    <select
+                        className="browser-default"
+                        name="tieneAlergias"
+                        value={formData.tieneAlergias}
+                        onChange={handleChange}
+                        required
+                    >
+                        <option value="">Tiene alergias?</option>
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                {/* Cual/es (Alergias) */}
+                {formData.tieneAlergias === 'Sí' && (
                     <div className="input-field col s12">
-                        <select
-                            className="browser-default"
-                            name="dificultadesComunicacion"
-                            value={formData.dificultadesComunicacion}
+                        <label htmlFor="alergias">Cual/es (Alergias):</label>
+                        <input
+                            type="text"
+                            name="alergias"
+                            id="alergias"
+                            value={formData.alergias}
                             onChange={handleChange}
-                            required
-                        >
-                            <option value="">Tiene dificultades de comunicación?</option>
-                            <option value="Sí">Sí</option>
-                            <option value="No">No</option>
-                        </select>
+                        />
                     </div>
+                )}
 
-                    {/* Preferencias de comunicación */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="preferenciasComunicacion">Preferencias de comunicación:</label>
-                            <input
-                                type="text"
-                                name="preferenciasComunicacion"
-                                id="preferenciasComunicacion"
-                                value={formData.preferenciasComunicacion}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    </div>
+                {/* Toma medicamentos */}
+                <div className="input-field col s12">
+                    <select
+                        className="browser-default"
+                        name="tomaMedicamentos"
+                        value={formData.tomaMedicamentos}
+                        onChange={handleChange}
+                        required
+                    >
+                        <option value="">Toma medicamentos?</option>
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
 
-                    {/* Rutinas */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Rutinas :</label>
-                            <input
-                                type="text"
-                                name="rutinas"
-                                id="rutinas"
-                                value={formData.rutinas}
-                                onChange={handleChange}
-                            />
-                        </div>
+                {/* Cual/es (Medicamentos) */}
+                {formData.tomaMedicamentos === 'Sí' && (
+                    <div className="input-field col s12">
+                        <label htmlFor="medicamentos">Cual/es (Medicamentos):</label>
+                        <input
+                            type="text"
+                            name="medicamentos"
+                            id="medicamentos"
+                            value={formData.medicamentos}
+                            onChange={handleChange}
+                        />
                     </div>
+                )}
 
-                    {/* Intereses profundos */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Intereses profundos :</label>
-                            <input
-                                type="text"
-                                name="interesesProfundos"
-                                id="interesesProfundos"
-                                value={formData.interesesProfundos}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    </div>
+                {/* Tiene un objeto de apoyo */}
+                <div className="input-field col s12">
+                    <select
+                        className="browser-default"
+                        name="tieneObjetoApoyo"
+                        value={formData.tieneObjetoApoyo}
+                        onChange={handleChange}
+                        required
+                    >
+                        <option value="">Tiene un objeto de apoyo?</option>
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
 
-                    {/* Comportamientos repetitivos */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Comportamientos repetitivos :</label>
-                            <input
-                                type="text"
-                                name="comportamientosRepetitivos"
-                                id="comportamientosRepetitivos"
-                                value={formData.comportamientosRepetitivos}
-                                onChange={handleChange}
-                            />
-                        </div>
+                {/* Cual/es (Objeto de apoyo) */}
+                {formData.tieneObjetoApoyo === 'Sí' && (
+                    <div className="input-field col s12">
+                        <label htmlFor="objetoApoyo">Cual/es (Objeto de apoyo):</label>
+                        <input
+                            type="text"
+                            name="objetoApoyo"
+                            id="objetoApoyo"
+                            value={formData.objetoApoyo}
+                            onChange={handleChange}
+                        />
                     </div>
+                )}
 
-                    {/* Sensibilidad sensorial: */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Sensibilidad sensorial :</label>
-                            <input
-                                type="text"
-                                name="sensibilidadSensorial"
-                                id="sensibilidadSensorial"
-                                value={formData.sensibilidadSensorial}
-                                onChange={handleChange}
-                            />
-                        </div>
-                    </div>
+                {/* Tiene dificultades de comunicación */}
+                <div className="input-field col s12">
+                    <select
+                        className="browser-default"
+                        name="dificultadesComunicacion"
+                        value={formData.dificultadesComunicacion}
+                        onChange={handleChange}
+                        required
+                    >
+                        <option value="">Tiene dificultades de comunicación?</option>
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
 
-                    {/* Expresión de emociones: */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Expresión de emociones :</label>
-                            <input
-                                type="text"
-                                name="expresionEmociones"
-                                id="expresionEmociones"
-                                value={formData.expresionEmociones}
-                                onChange={handleChange}
-                            />
-                        </div>
+                {/* Preferencias de comunicación */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="preferenciasComunicacion">Preferencias de comunicación:</label>
+                        <input
+                            type="text"
+                            name="preferenciasComunicacion"
+                            id="preferenciasComunicacion"
+                            value={formData.preferenciasComunicacion}
+                            onChange={handleChange}
+                        />
                     </div>
+                </div>
 
-                    {/* Manejo de emociones: */}
-                    <div className="row">
-                        <div className="input-field col s12">
-                            <label htmlFor="rutinas">Manejo de emociones :</label>
-                            <input
-                                type="text"
-                                name="manejoEmociones"
-                                id="manejoEmociones"
-                                value={formData.manejoEmociones}
-                                onChange={handleChange}
-                            />
-                        </div>
+                {/* Rutinas */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Rutinas :</label>
+                        <input
+                            type="text"
+                            name="rutinas"
+                            id="rutinas"
+                            value={formData.rutinas}
+                            onChange={handleChange}
+                        />
                     </div>
+                </div>
 
-                    {/* Submit Button */}
-                    <div className="input-field col s12 center-align">
-                        <button className="btn waves-effect waves-light" type="submit">
-                            Enviar Formulario
-                        </button>
+                {/* Intereses profundos */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Intereses profundos :</label>
+                        <input
+                            type="text"
+                            name="interesesProfundos"
+                            id="interesesProfundos"
+                            value={formData.interesesProfundos}
+                            onChange={handleChange}
+                        />
                     </div>
-                </form>
+                </div>
 
-                {/* Success Modal */}
-                <div id="successModal" className="modal">
-                    <div className="modal-content">
-                        <h5>Exitoso</h5>
-                        <p>La Información ha sido guardada en nuestro sistema!</p>
+                {/* Comportamientos repetitivos */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Comportamientos repetitivos :</label>
+                        <input
+                            type="text"
+                            name="comportamientosRepetitivos"
+                            id="comportamientosRepetitivos"
+                            value={formData.comportamientosRepetitivos}
+                            onChange={handleChange}
+                        />
                     </div>
-                    <div className="modal-footer">
-                        <button className="modal-close btn-flat">Close</button>
+                </div>
+
+                {/* Sensibilidad sensorial: */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Sensibilidad sensorial :</label>
+                        <input
+                            type="text"
+                            name="sensibilidadSensorial"
+                            id="sensibilidadSensorial"
+                            value={formData.sensibilidadSensorial}
+                            onChange={handleChange}
+                        />
                     </div>
+                </div>
+
+                {/* Expresión de emociones: */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Expresión de emociones :</label>
+                        <input
+                            type="text"
+                            name="expresionEmociones"
+                            id="expresionEmociones"
+                            value={formData.expresionEmociones}
+                            onChange={handleChange}
+                        />
+                    </div>
+                </div>
+
+                {/* Manejo de emociones: */}
+                <div className="row">
+                    <div className="input-field col s12">
+                        <label htmlFor="rutinas">Manejo de emociones :</label>
+                        <input
+                            type="text"
+                            name="manejoEmociones"
+                            id="manejoEmociones"
+                            value={formData.manejoEmociones}
+                            onChange={handleChange}
+                        />
+                    </div>
+                </div>
+
+                {/* Submit Button */}
+                <div className="input-field col s12 center-align">
+                    <button className="btn waves-effect waves-light" type="submit">
+                        Enviar Formulario
+                    </button>
+                </div>
+            </form>
+
+            {/* Success Modal */}
+            <div id="successModal" className="modal">
+                <div className="modal-content">
+                    <h5>Exitoso</h5>
+                    <p>La Información ha sido guardada en nuestro sistema!</p>
+                </div>
+                <div className="modal-footer">Å
+                    <button className="modal-close btn-flat">Close</button>
                 </div>
             </div>
         </div>

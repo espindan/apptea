@@ -6,7 +6,7 @@ import M from 'materialize-css'; // Materialize JS
 import 'materialize-css/dist/css/materialize.min.css'; // Materialize CSS
 import mainBanner from './images/main_banner.jpg'; // Import image
 import bannerImage from './images/banner_background.jpg'; // Import image
-import Search from './Search';
+import AutismChildForm from './AutismChildForm';
 
 
 const Blog = () => {
@@ -105,7 +105,7 @@ const Blog = () => {
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <Search/>
+          <AutismChildForm/>
         </div>
       </div>
 
