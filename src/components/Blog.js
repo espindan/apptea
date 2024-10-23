@@ -54,32 +54,32 @@ const Blog = () => {
       
       <div class="container">
     <div class="section">
-
+    <h3 className="center-align">Preguntas Frecuentes</h3>
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+            <h5 class="center">¿Qué es el autismo y cuáles son sus síntomas principales?</h5>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">El autismo es un trastorno del neurodesarrollo que afecta la comunicación, las habilidades sociales y los comportamientos de las personas. Los síntomas pueden variar, pero suelen incluir dificultades en la interacción social, problemas para comunicarse verbalmente y no verbalmente, y comportamientos repetitivos o intereses restringidos.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
+            <h5 class="center">¿El autismo tiene cura o tratamiento?</h5>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">El autismo no tiene cura, ya que es una condición de por vida. Sin embargo, existen tratamientos y terapias, como la intervención temprana, la terapia ocupacional y la terapia del habla, que pueden mejorar significativamente la calidad de vida y ayudar a las personas a desarrollar habilidades para adaptarse a diferentes situaciones.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
+            <h5 class="center">¿El autismo afecta a todas las personas de la misma manera?</h5>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">El autismo se presenta en un espectro, lo que significa que las personas pueden experimentar diferentes grados de síntomas. Algunas personas pueden necesitar más apoyo en su vida diaria, mientras que otras pueden ser muy independientes y tener habilidades cognitivas avanzadas, pero aún enfrentar desafíos en la socialización o la comprensión de las normas sociales.</p>
           </div>
         </div>
       </div>
@@ -116,34 +116,29 @@ const Blog = () => {
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+          <h5 class="white-text">Apptea</h5>
+          <p class="grey-text text-lighten-4">Es una aplicación web y se analiza celular enfocada en los niños con trastorno del Espectro Autista (TEA), que tendrá como función principal apoyar a la red de cuido o encargados de los niños para tener un mejor conocimiento en la vida ordinaria de los niños con el trastorno, comportamiento experiencias, blog de compartir la vida ordinaria de ellos, de forma que puedan ser comprendidos a nivel social.</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Integrantes</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li>Sofia Campos Sequeira</li>
+            <li>Maria Celeste Chavarria Espinoza</li>
+            <li>Isaac Alexander Herrera Hidalgo</li>
+            <li>Mei Lin Wang Rivera</li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="white-text">Código</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li>9E01</li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Hecho por <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
