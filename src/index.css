@@ -1,6 +1,10 @@
 nav ul a,
 nav .brand-logo {
-  color: #444!important;;
+  color: #444!important;
+ 
+}
+.brand-logo {
+  height: 64px;
 }
 
 .sidenav-trigger {

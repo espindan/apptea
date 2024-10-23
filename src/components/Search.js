@@ -32,13 +32,10 @@ const SearchByIdScreen = () => {
     };
 
     return (
-        <div className="App">
-        <Header/>
         <div className="container">
-            <h3 className="center-align">Perfil del paciente</h3>
+            <h4 className="center-align">Busqueda de pacientes</h4>
             <form onSubmit={handleSearch} className="col s12">
             <div class="row center-align">
-
                 <div className="input-field col s6 ">
                     <i class="material-icons prefix">search</i>
                     <input
@@ -49,7 +46,6 @@ const SearchByIdScreen = () => {
                         required
                     />
                     <label htmlFor="id">Numero de cédula</label>
-
                     {/* <button type="submit" className="btn waves-effect waves-light">Buscar</button> */}
                 </div>
 
@@ -96,7 +92,6 @@ const SearchByIdScreen = () => {
             </div>
           
             )}
-        </div>
         </div>
     );
 };
