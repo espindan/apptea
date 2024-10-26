@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apptea/static/css/main.04221c73.css",
-    "main.js": "/apptea/static/js/main.6a86a7a6.js",
+    "main.js": "/apptea/static/js/main.fc65c19f.js",
     "static/js/952.3d997745.chunk.js": "/apptea/static/js/952.3d997745.chunk.js",
     "static/js/453.6ed87669.chunk.js": "/apptea/static/js/453.6ed87669.chunk.js",
     "static/media/banner_background.jpg": "/apptea/static/media/banner_background.9b174e9cf8dfffbb3c69.jpg",
@@ -9,12 +9,12 @@
     "static/media/main_banner.jpg": "/apptea/static/media/main_banner.efe902673eee761fe82e.jpg",
     "index.html": "/apptea/index.html",
     "main.04221c73.css.map": "/apptea/static/css/main.04221c73.css.map",
-    "main.6a86a7a6.js.map": "/apptea/static/js/main.6a86a7a6.js.map",
+    "main.fc65c19f.js.map": "/apptea/static/js/main.fc65c19f.js.map",
     "952.3d997745.chunk.js.map": "/apptea/static/js/952.3d997745.chunk.js.map",
     "453.6ed87669.chunk.js.map": "/apptea/static/js/453.6ed87669.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04221c73.css",
-    "static/js/main.6a86a7a6.js"
+    "static/js/main.fc65c19f.js"
   ]
 }
