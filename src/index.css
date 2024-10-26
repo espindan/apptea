@@ -7,6 +7,24 @@ nav .brand-logo {
   height: 64px;
 }
 
+.search-container {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #444;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #444;
+}
+
+.search-container #search {
+  margin-top: 6px;
+}
+
 .sidenav-trigger {
   color: #26a69a;
 }

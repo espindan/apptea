@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import supabase from './supabaseClient';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import logo from './images/logo.png'; // Import image
 
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
@@ -37,13 +38,11 @@ const Login = ({ onLogin }) => {
         <img
           className="responsive-img"
           style={{ width: '250px' }}
-          src="https://i.imgur.com/ax0NCsK.gif"
+          src={logo}
           alt="login illustration"
         />
         <div className="section"></div>
-        <h5 className="indigo-text">Please, login into your account</h5>
-        <div className="section"></div>
-
+    
         <div className="container">
           <div
             className="z-depth-1 grey lighten-4 row"
@@ -95,7 +94,7 @@ const Login = ({ onLogin }) => {
                   <button
                     type="submit"
                     name="btn_login"
-                    className="col s12 btn btn-large waves-effect pink"
+                    className="col s12 btn btn-large waves-effect teal"
                   >
                     Login
                   </button>

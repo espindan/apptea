@@ -7,6 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css'; // Materialize CSS
 import mainBanner from './images/main_banner.jpg'; // Import image
 import bannerImage from './images/banner_background.jpg'; // Import image
 import AutismChildForm from './AutismChildForm';
+import Search from './Search'
 
 
 const Blog = () => {
@@ -54,7 +55,7 @@ const Blog = () => {
       </div>
       
       <div class="container">
-    <div class="section">
+    <div id="info-blog" class="section">
     <h3 className="center-align">Preguntas Frecuentes</h3>
       <div class="row">
         <div class="col s12 m4">
@@ -99,7 +100,7 @@ const Blog = () => {
     <div className="parallax"><img src={bannerImage} alt="Unsplashed background img 1"/></div>
 
   </div>
-  <div class="container">
+  <div id="crear-perfil" class="container">
     <div class="section">
 
       <div class="row">
