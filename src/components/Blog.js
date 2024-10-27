@@ -7,8 +7,6 @@ import 'materialize-css/dist/css/materialize.min.css'; // Materialize CSS
 import mainBanner from './images/main_banner.jpg'; // Import image
 import bannerImage from './images/banner_background.jpg'; // Import image
 import AutismChildForm from './AutismChildForm';
-import Search from './Search'
-
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
