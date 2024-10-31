@@ -7,7 +7,7 @@ const Post = ({ id, title, content, image, author, likes }) => {
 
   const handleLike = () => {
     if (isLiked) {
-     // setLikes(likes - 1);
+      // setLikes(likes - 1);
     } else {
       //setLikes(likes + 1);
     }
@@ -20,18 +20,14 @@ const Post = ({ id, title, content, image, author, likes }) => {
         <div className="author">{author} • 1 año</div>
         <h5>{title}</h5>
         <p>{content}</p>
-        <div >
-          <div className="like-component">
-            <button
-              onClick={handleLike}
-              className="btn-flat like-button"
-              style={{ cursor: 'pointer', color: isLiked ? 'red' : 'black' }}
-            >
-              <i className="material-icons">
-                {isLiked ? 'favorite' : 'favorite_border'}
-              </i>
-            </button>
-            <span>{likes} {likes === 1 ? 'Like' : 'Likes'}</span>
+
+        <div className="row s3 post-actions">
+          <div className="col s1">
+            <i className="material-icons" onClick={handleLike}>favorite</i>
+            <span>{likes}</span>
+          </div>
+          <div className="col s1">
+            <i className="material-icons" >insert_comment</i>
           </div>
         </div>
       </div>

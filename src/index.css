@@ -43,6 +43,18 @@ code {
     monospace;
 }
 
+.post-section {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+  border-left: 2px solid teal;
+}
+
+.post-actions
+{
+  margin-top: 22px;
+}
+
 /* styles.css */
 
 /* .container {

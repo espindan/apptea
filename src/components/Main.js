@@ -29,7 +29,7 @@ const Main = () => {
               <h5 className="header col s12 light">Su sitio de preferencia para suplir las necesidades de las personas con TEA</h5>
             </div>
             <div className="row center">
-              <a href="http://materializecss.com/getting-started.html" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Comenzar</a>
+              <a href="#perfil-paciente" id="download-button" className="btn-large waves-effect waves-light teal lighten-1">Comenzar</a>
             </div>
 
           </div>
@@ -89,8 +89,7 @@ const Main = () => {
             <div class="col s12 center">
               <h3><i class="mdi-content-send brown-text"></i></h3>
               <AutismChildForm />
-            </div>
-               
+            </div> 
       </div>
 
       ,<div id="third_parallax_container" class="parallax-container section scrollspy valign-wrapper">
@@ -143,10 +142,7 @@ const Main = () => {
           </form>
         </div>
       </div>
-   
       <Footer />
-
-
     </div>
   );
 };
