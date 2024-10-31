@@ -4,6 +4,7 @@ import 'materialize-css/dist/css/materialize.min.css'; // Materialize CSS
 import M from 'materialize-css'; // Import Materialize JS
 import logo from './images/logo.png'; // Import image
 import Search from './Search'
+import Main from './Main';
 
 const Header = () => {
   useEffect(() => {
@@ -54,9 +55,7 @@ const Header = () => {
                 </div>
               </form>
             </li>
-            <li><a href="#perfil-paciente">Paciente</a></li>
-            <li><a href="#perfil-profesional">Profesional</a></li>
-            <li><Link to="/Blog">Blog</Link></li>
+            <li><Link to="/Main">Página Principal</Link></li>
             <li><Link to="/">Salir</Link></li>
           </ul>
 
@@ -77,9 +76,7 @@ const Header = () => {
                 </div>
               </form>
             </li>
-            <li><a href="#perfil-paciente">Paciente</a></li>
-            <li><a href="#perfil-profesional">Profesional</a></li>
-            <li><Link to="/Blog">Blog</Link></li>
+            <li><Link to="/Main">Página Principal</Link></li>
             <li><Link to="/">Salir</Link></li>
           </ul>
 

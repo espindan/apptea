@@ -4,10 +4,12 @@ import supabase from './components/supabaseClient';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Blog from './components/Blog';
+import Main from './components/Main';
 import AutismChildForm from './components/AutismChildForm'
 import Search from './components/Search';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
- 
+import Post from './components/Post';
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -27,9 +29,9 @@ function App() {
       <Routes>
         <Route path="" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Main" element={<Main />} />
         <Route path="/Blog" element={<Blog />} />
-        <Route path="/AutismChildForm" element={<AutismChildForm />} />
-        <Route path="/Search" element={<Search />} />
+        <Route path="/Post" element={<Post />} />
       </Routes>
     </Router>
   );

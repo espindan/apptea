@@ -25,7 +25,7 @@ const Login = ({ onLogin }) => {
       setError(error.message);
     } else {
       console.log('Logged in:', data);
-      navigate('/Blog')
+      navigate('/Main')
     }
     setLoading(false);
   };
