@@ -54,16 +54,32 @@ const Header = () => {
                 </div>
               </form>
             </li>
-            <li><a href="#info-blog">Blog de Información</a></li>
-            <li><a href="#crear-perfil">Crear Perfil</a></li>
+            <li><a href="#perfil-paciente">Paciente</a></li>
+            <li><a href="#perfil-profesional">Profesional</a></li>
+            <li><a href="#crear-perfil">Blog</a></li>
             <li><Link to="/">Salir</Link></li>
           </ul>
 
           {/* Mobile Sidenav */}
           <ul className="sidenav" id="mobile-nav">
-            <li><Link to="/Search">Buscar</Link></li>
-            <li><a href="#info-blog">Blog de Información</a></li>
-            <li><a href="#crear-perfil">Crear Perfil</a></li>
+          <li>
+              <form onSubmit={handleSearchSubmit}>
+                <div className="input-field search-container">
+                  <i className="material-icons search-icon">search</i>
+                  <input
+                    id="search"
+                    type="search"
+                    placeholder="Busqueda Paciente"
+                    //value={searchTerm}
+                    onClick={handleSearchClick} // Open modal on click
+                    readOnly
+                  />
+                </div>
+              </form>
+            </li>
+            <li><a href="#perfil-paciente">Paciente</a></li>
+            <li><a href="#perfil-profesional">Profesional</a></li>
+            <li><a href="#crear-perfil">Blog</a></li>
             <li><Link to="/">Salir</Link></li>
           </ul>
 

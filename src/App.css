@@ -13,6 +13,14 @@
   }
 }
 
+#third_parallax_container {
+  height: 320px;
+}
+
+.profesional-profile {
+  color: teal;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
