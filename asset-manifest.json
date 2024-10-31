@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apptea/static/css/main.e98c248e.css",
-    "main.js": "/apptea/static/js/main.18cceeec.js",
+    "main.css": "/apptea/static/css/main.6a8dfc7a.css",
+    "main.js": "/apptea/static/js/main.9268f2d1.js",
     "static/js/952.3d997745.chunk.js": "/apptea/static/js/952.3d997745.chunk.js",
     "static/js/453.6ed87669.chunk.js": "/apptea/static/js/453.6ed87669.chunk.js",
     "static/media/third_parallex_image.png": "/apptea/static/media/third_parallex_image.715c59d6379fe56e257b.png",
@@ -9,13 +9,13 @@
     "static/media/logo.png": "/apptea/static/media/logo.385b4a9eb849c9776435.png",
     "static/media/main_banner.jpg": "/apptea/static/media/main_banner.efe902673eee761fe82e.jpg",
     "index.html": "/apptea/index.html",
-    "main.e98c248e.css.map": "/apptea/static/css/main.e98c248e.css.map",
-    "main.18cceeec.js.map": "/apptea/static/js/main.18cceeec.js.map",
+    "main.6a8dfc7a.css.map": "/apptea/static/css/main.6a8dfc7a.css.map",
+    "main.9268f2d1.js.map": "/apptea/static/js/main.9268f2d1.js.map",
     "952.3d997745.chunk.js.map": "/apptea/static/js/952.3d997745.chunk.js.map",
     "453.6ed87669.chunk.js.map": "/apptea/static/js/453.6ed87669.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e98c248e.css",
-    "static/js/main.18cceeec.js"
+    "static/css/main.6a8dfc7a.css",
+    "static/js/main.9268f2d1.js"
   ]
 }
