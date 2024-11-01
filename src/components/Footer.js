@@ -7,7 +7,7 @@ const Footer = () => {
           <div class="row">
             <div class="col l6 s12">
               <h5 class="white-text">Apptea</h5>
-              <p align="left">Es una aplicación web y se analiza celular enfocada en los niños con trastorno del Espectro Autista (TEA), que tendrá como función principal apoyar a la red de cuido o encargados de los niños para tener un mejor conocimiento en la vida ordinaria de los niños con el trastorno, comportamiento experiencias, blog de compartir la vida ordinaria de ellos, de forma que puedan ser comprendidos a nivel social.</p>
+              <p align="left">Consiste en una aplicación web para dispositivos móviles dirigidas a los cuidadores de niños con Trastorno Espectro Autista (TEA), cuyo propósito es brindar apoyo a los cuidadores, docentes , etc.</p>
             </div>
             <div class="col l3 s12">
               <h5 class="white-text">Integrantes</h5>
