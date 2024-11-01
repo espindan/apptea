@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import PostActions from './PostActions'
 
 const Post = ({ id, title, content, image, author, likes }) => {
   // const [likes, setLikes] = useState(0);
@@ -21,15 +21,9 @@ const Post = ({ id, title, content, image, author, likes }) => {
         <h5>{title}</h5>
         <p>{content}</p>
 
-        <div className="row s3 post-actions">
-          <div className="col s1">
-            <i className="material-icons" onClick={handleLike}>favorite</i>
-            <span>{likes}</span>
-          </div>
-          <div className="col s1">
-            <i className="material-icons" >insert_comment</i>
-          </div>
-        </div>
+
+        <PostActions postId={id} likesCount={likes} />
+
       </div>
     </div>
 

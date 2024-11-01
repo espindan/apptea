@@ -58,6 +58,7 @@ function AutismChildForm() {
                         sensory_sensitivity: formData.sensibilidadSensorial,
                         emotional_expressions: formData.expresionEmociones,
                         emotional_behaviors: formData.manejoEmociones,
+                        photo_url: formData.photo_url
                     },
                 ]);
 
@@ -84,7 +85,8 @@ function AutismChildForm() {
                     comportamientosRepetitivos: '',
                     sensibilidadSensorial: '',
                     expresionEmociones: '',
-                    manejoEmociones: ''
+                    manejoEmociones: '',
+                    photo_url: ''
                 });
 
                 M.Modal.getInstance(document.getElementById('successModal')).open();
@@ -154,6 +156,19 @@ function AutismChildForm() {
                                 value={formData.gradoAutismo}
                                 onChange={handleChange}
                                 required
+                            />
+                        </div>
+
+                    </div>
+                    <div className="row">
+                        <div className="input-field col s12">
+                            <label htmlFor="rutinas">Foto :</label>
+                            <input
+                                type="text"
+                                name="photo_url"
+                                id="photo_url"
+                                value={formData.photo_url}
+                                onChange={handleChange}
                             />
                         </div>
 
@@ -383,7 +398,7 @@ function AutismChildForm() {
                     <h5>Exitoso</h5>
                     <p>La Información ha sido guardada en nuestro sistema!</p>
                 </div>
-                <div className="modal-footer">Å
+                <div className="modal-footer">
                     <button className="modal-close btn-flat">Close</button>
                 </div>
             </div>
