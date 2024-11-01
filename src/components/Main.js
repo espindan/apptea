@@ -106,8 +106,8 @@ const Main = () => {
 
       <div class="container section scrollspy" id="perfil-profesional">
         <h2 class="center profesional-profile">Perfil Profesional</h2>
-        <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br></br>
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="center">Describe aquí tus habilidades, experiencia y metas profesionales de manera breve y clara<br></br>
+        Resalta tus logros más importantes y cómo tu puedes contribuir en tu área de trabajo.</p>
 
         <div class="row">
           <form class="col s8 offset-s2">

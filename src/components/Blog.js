@@ -29,6 +29,7 @@ const Blog = ({ title, content, image }) => {
   return (
     <div>
       <BlogHeader />
+      
       <div className="container">
         <h3>AppTea Blog</h3>
         {posts.map(post => (
