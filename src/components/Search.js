@@ -69,13 +69,13 @@ const SearchByIdScreen = () => {
           <div className="card-content row">
             <div id="datos-personales" className="tab-content col s12 m6">
               <div className="profile-image">
-                <img
-                  src="https://zkhendzouvpqpuzphbpv.supabase.co/storage/v1/object/sign/AppTea/ninno.jpeg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJBcHBUZWEvbmlubm8uanBlZyIsImlhdCI6MTcyOTM2MDE0MywiZXhwIjoxNzYwODk2MTQzfQ.tdQCUuvDl688BltgOFfNSwHARfp3AaSlNNxBM8ITtNg&t=2024-10-19T17%3A49%3A03.886Z"
+                <img className='profile-image'
+                  src= {data.photo_url}
                   alt="Profile"
                 />
               </div>
               <div className="profile-info">
-                <h2>{data.name}</h2>
+                <h4>{data.name}</h4>
                 <p><strong>Edad:</strong> {data.age}</p>
                 <p><strong>Grado de Autismo:</strong> {data.autism_level}</p>
                 <p><strong>Objeto de Apoyo:</strong> {data.support_object}</p>
